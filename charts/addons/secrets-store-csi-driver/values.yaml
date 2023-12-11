@@ -1,5 +1,6 @@
 # Helm chart values
 linux:
+  enabled: true
   priorityClassName: "system-node-critical"
 syncSecret:
   enabled: true
