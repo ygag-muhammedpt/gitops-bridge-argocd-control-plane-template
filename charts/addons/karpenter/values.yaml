@@ -1,16 +1,17 @@
 # Helm chart values
 # nodeSelector:
 #   nodegroup: 'karpenter'
-# affinity:
-#   nodeAffinity:
-#     requiredDuringSchedulingIgnoredDuringExecution:
-#       nodeSelectorTerms:
-#         - matchExpressions:
-#             - key: karpenter.sh/nodepool-name
-#               operator: DoesNotExist
-#   podAntiAffinity:
-#     requiredDuringSchedulingIgnoredDuringExecution:
-#       - topologyKey: "kubernetes.io/hostname"
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: karpenter.sh/nodepool-name
+              operator: DoesNotExist
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      - topologyKey: "kubernetes.io/hostname"
 # settings:
 #   clusterName: "ex-eks"
-addonChartVersion: v0.32.3        
+addonChartVersion: v0.32.3   
+replicas: 3     
