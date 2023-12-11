@@ -58,7 +58,7 @@ spec:
             values: |
               awsRegion: {{metadata.annotations.aws_region}}
               queueURL: {{metadata.annotations.aws_node_termination_handler_sqs_queue_url}}
-              enableSqsTerminationDraining: true
+              enableSqsTerminationDraining: false
               serviceAccount:
                 name: {{metadata.annotations.aws_node_termination_handler_service_account}}
                 annotations:
