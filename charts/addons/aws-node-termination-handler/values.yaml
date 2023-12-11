@@ -1,3 +1,1 @@
 # Helm chart values
-checkASGTagBeforeDraining: false
-enableSqsTerminationDraining: false
