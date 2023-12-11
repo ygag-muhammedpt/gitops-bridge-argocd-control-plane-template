@@ -11,7 +11,4 @@ affinity:
   podAntiAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       - topologyKey: "kubernetes.io/hostname"
-# settings:
-#   clusterName: "ex-eks"
-addonChartVersion: v0.32.3   
 replicas: 3     

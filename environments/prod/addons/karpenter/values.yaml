@@ -1,1 +1,2 @@
 replicas: 4
+clusterName: ex-eks
