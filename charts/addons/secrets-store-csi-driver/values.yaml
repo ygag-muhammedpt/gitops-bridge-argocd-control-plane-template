@@ -1,6 +1,6 @@
 # Helm chart values
 linux:
   enabled: true
-  priorityClassName: "system-node-critical"
+  priorityClassName: "system-cluster-critical"
 syncSecret:
   enabled: true
