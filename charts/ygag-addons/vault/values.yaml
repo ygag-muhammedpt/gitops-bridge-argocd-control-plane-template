@@ -1,3 +1,11 @@
 csi:
   extraArgs:
     - "--vault-mount=ygag-blueprint-eks-v2"
+  pod:
+    affinity:
+      nodeAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+          nodeSelectorTerms:
+            - matchExpressions:
+                - key: karpenter.sh/nodepool-name
+                  operator: Exists
