@@ -14,7 +14,6 @@ spec:
               values:
                 addonChart: vault
                 addonChartReleaseName: vault-csi
-                addonChartRepositoryNamespace: vault
                 addonChartVersion: "0.21.0"
                 # using oci repostory already configure in argocd
                 # argocd repo add public.ecr.aws --type helm --name aws-public-ecr --enable-oci
@@ -48,7 +47,7 @@ spec:
         - repoURL: '{{metadata.annotations.addons_repo_url}}'
           targetRevision: '{{metadata.annotations.addons_repo_revision}}'
           ref: values
-        - chart: '{{values.addonChartRepositoryNamespace}}/{{values.addonChart}}'
+        - chart: '{{values.addonChart}}'
           repoURL: '{{values.addonChartRepository}}'
           targetRevision: '{{values.addonChartVersion}}'
           helm:
