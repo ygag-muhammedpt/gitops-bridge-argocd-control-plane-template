@@ -1,0 +1,3 @@
+csi:
+  extraArgs:
+    - "--vault-mount=ygag-blueprint-eks-v2"
