@@ -17,7 +17,7 @@ spec:
                 addonChartVersion: "0.21.0"
                 # using oci repostory already configure in argocd
                 # argocd repo add public.ecr.aws --type helm --name aws-public-ecr --enable-oci
-                addonChartRepository: https://helm.releases.hashicorp.com
+                addonChartRepository: oci://459037613883.dkr.ecr.us-east-1.amazonaws.com/production/helm/official
               selector:
                 matchExpressions:
                   - key: akuity.io/argo-cd-cluster-name
