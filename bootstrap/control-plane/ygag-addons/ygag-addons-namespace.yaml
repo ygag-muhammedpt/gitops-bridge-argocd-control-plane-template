@@ -28,7 +28,7 @@ spec:
           releaseName: '{{values.addonChart}}'
           ignoreMissingValueFiles: true
           valueFiles:
-            - ../../../../environments/{{metadata.labels.environment}}/addons/{{values.addonChart}}/resources/values.yaml
+            - ../../../../environments/{{metadata.labels.environment}}/ygag-addons/{{values.addonChart}}/values.yaml
       destination:
         namespace: ygag
         name: '{{name}}'
