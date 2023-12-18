@@ -1,0 +1,5 @@
+namespace:
+  # Cluster
+
+  # Applications
+  - name: 'bizrewards-api-test'

@@ -1,0 +1,17 @@
+{{ range .Values.namespace }}
+
+---
+apiVersion: v1
+
+kind: Namespace
+
+metadata:
+  {{- if .annotations }}
+  annotations:
+  {{- toYaml .annotations | nindent 4 }}
+  {{- end }}
+
+  name: {{ .name }}
+
+{{ end }}
+

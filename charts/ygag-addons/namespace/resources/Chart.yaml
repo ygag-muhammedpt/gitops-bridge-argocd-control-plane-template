@@ -1,0 +1,12 @@
+# Helm chart API version
+apiVersion: v2
+
+# Helm chart version
+version: 1.0.1
+
+# Helm chart type: application/library
+type: application
+
+name: namespace
+description: Helm chart for namespace
+
